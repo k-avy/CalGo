@@ -43,7 +43,7 @@ func solvePostfix() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			fmt.Printf("The result of postfix expression, %s is: %d", args[0], res)
+			fmt.Printf("The result of postfix expression, %s is: %d\n", args[0], res)
 			return nil
 		},
 	}
