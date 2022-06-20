@@ -1,8 +1,9 @@
 package main
 
-import(
+import (
 	cmd "github.com/k-avy/CalGo/pkg"
 )
-func main(){
+
+func main() {
 	cmd.Execute()
 }
