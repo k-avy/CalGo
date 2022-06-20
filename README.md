@@ -43,7 +43,7 @@ go run ./cmd/calgo
 ./calgo solve prefix <expression here as string>
 
 # for postfix expression
-./calgo solve postfix <expression here as string>
+./calgo solve postfix -- <expression here as string>
 ```
 
 2. You can convert from (prefix or postfix) to (prefix,postfix or infix) using the command.
