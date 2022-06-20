@@ -40,7 +40,7 @@ go run ./cmd/calgo
 
 ```bash 
 # for prefix expression
-./calgo solve prefix <expression here as string>
+./calgo solve prefix -- <expression here as string>
 
 # for postfix expression
 ./calgo solve postfix -- <expression here as string>
