@@ -25,7 +25,7 @@ func solvePrefix() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			fmt.Printf("The result of prefix expression, %s is: %d", args[0], res)
+			fmt.Printf("The result of prefix expression, %s is: %d\n", args[0], res)
 			return nil
 		},
 	}
