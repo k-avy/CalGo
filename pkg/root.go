@@ -6,7 +6,6 @@ package cmd
 
 import (
 	"os"
-
 	"github.com/k-avy/CalGo/pkg/cmd"
 	"github.com/spf13/cobra"
 )
@@ -15,7 +14,6 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "calgo",
 	Short: "It solves the prefix and postfix Expression",
-
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },

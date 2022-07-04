@@ -23,7 +23,7 @@ func SolvePostfixExpression(str string) (int, error) {
 		if err == nil {
 			st.Push(num)
 		} else {
-			o2, err1 := st.Pop()
+			o2, _ := st.Pop()
 			o1, err1 := st.Pop()
 			if err1 != nil {
 				return -1, err1
@@ -37,7 +37,7 @@ func SolvePostfixExpression(str string) (int, error) {
 			} else if ele[i] == "/" {
 				num = o1 / o2
 			} else {
-				return -1, errors.New("Invalid Expression")
+				return -1, errors.New("INVALID ")
 			}
 			st.Push(num)
 			fmt.Println(tmp, num)
@@ -56,12 +56,12 @@ func ConvertPosttoPre(expr string) (string, error) {
 	for i := 0; i < l; i++ {
 		tmp = tmp[:i]
 		if elem[i] == "+" || elem[i] == "-" || elem[i] == "*" || elem[i] == "/" {
-			op1, err1 := st.Pop()
+			op1, _ := st.Pop()
 			op2, err1 := st.Pop()
 			if err1 != nil {
 				return "nil", err1
 			}
-			temp := string(elem[i]) + string(op2) + string(op1)
+			temp := string(elem[i]) + " " + string(op2) + " " + string(op1)
 			st.Push(temp)
 		} else {
 			st.Push(string(elem[i]))
@@ -86,7 +86,7 @@ func ConvertPosttoIn(s string) (string, error) {
 	for i := 0; i < l; i++ {
 		t = t[:i]
 		if elem[i] == "+" || elem[i] == "-" || elem[i] == "*" || elem[i] == "/" {
-			op1, err := st.Pop()
+			op1, _ := st.Pop()
 			op2, err := st.Pop()
 			if err != nil {
 				return "nil", err

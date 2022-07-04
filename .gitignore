@@ -4,7 +4,7 @@
 *.dll
 *.so
 *.dylib
-
+./calgo
 # Test binary, built with `go test -c`
 *.test
 
