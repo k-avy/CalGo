@@ -6,7 +6,6 @@ package cmd
 
 import (
 	"os"
-
 	"github.com/k-avy/CalGo/pkg/cmd"
 	"github.com/spf13/cobra"
 )
