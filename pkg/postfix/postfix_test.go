@@ -5,7 +5,7 @@ import "testing"
 
 func TestSolvePostFixExpression(t *testing.T) {
 	got, err := SolvePostfixExpression("4 6 +")
-	want := 10
+	want := 1
 	if got != want || err != nil {
 		t.Errorf("Error Found %v",err )
 	}
